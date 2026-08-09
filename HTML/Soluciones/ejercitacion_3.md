@@ -306,7 +306,7 @@ Comportamiento
   </form>
 
   <!-- Formulario 3 -->
-  <form id="form3" name="form3" action="mailto:xx@xx.com” enctype=text/plain method="post" target="_blank">
+  <form id="form3" name="form3" action="mailto:xx@xx.com” enctype="text/plain" method="post" target="_blank">
     <fieldset>
       <legend>LOGIN</legend>
       Usuario: <input type="text" id="usu3" name="usu3" />
