@@ -1,0 +1,81 @@
+p#normal {
+  font-family: arial,helvetica;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+*#destacado {
+  border-style: solid;
+  border-color: blue;
+  border-width: 2px;
+}
+
+#distinto {
+  background-color: #9EC7EB;
+  color: red;
+}
+
+/*
+Selector: p#normal
+
+Declaraciones:
+  - font-family: arial, helvetica;
+  - font-size: 11px;
+  - font-weight: bold;
+
+Efectos:
+  - Tipografía: utiliza arial y, si no está disponible utilizará helvetica.
+  - Tamaño de letra de 11 píxeles.
+  - Establece el grosor de la tipografía en negrita.
+*/
+<p id="normal">Este es un párrafo</p>
+
+
+/*
+Selector: *#destacado
+
+Declaraciones:
+  - border-style: solid;
+  - border-color: blue;
+  - border-width: 2px;
+
+Efectos:
+  - Establece el estilo de borde a sólido.
+  - Define el color del borde a azul.
+  - Define el grosor del borde de 2 píxeles.
+*/
+<p id="destacado">Este es otro párrafo</p>
+
+
+/*
+Selector: *#destacado
+
+Declaraciones:
+  - border-style: solid;
+  - border-color: blue;
+  - border-width: 2px;
+
+Efectos:
+  - Establece el estilo de borde a sólido.
+  - Define el color del borde a azul.
+  - Define el grosor del borde de 2 píxeles.
+*/
+<table id="destacado">
+  <tr>
+    <td>Esta es una tabla</td>
+  </tr>
+</table>
+
+
+/*
+Selector: #distinto
+
+Declaraciones:
+  - background-color: #9EC7EB;
+  - color: red;
+
+Efectos:
+  - Establece el color de fondo del elmento en #9EC7EB.
+  - Establece el color de la letra en rojo.
+*/
+<p id="distinto">Este es el último párrafo</p>
