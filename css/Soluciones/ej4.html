@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      color: green;
+    }
+
+    a:link {
+      color: gray;
+    }
+
+    a:visited {
+      color: blue;
+    }
+
+    a:hover {
+      color: fuchsia;
+    }
+
+    a:active {
+      color: red;
+    }
+
+    p {
+      font-family: arial, helvetica;
+      font-size: 10px;
+      color: black;
+    }
+
+    .contenido {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<!--
+Los efectos serán similares, salvo en el elemento p del primer código.
+
+En ambos casos, el selector universal * establece el color en verde. Sin embargo, para los elementos <p>, la regla p tiene mayor especificidad, por lo que el color final es negro.
+
+En el elemento <p> del primer bloque se aplica .contenido, que establece un tamaño de fuente de 14px y un peso de fuente bold. Aún así, el atributo style establece el peso de fuente en normal ya que tiene mayor prioridad sobre las reglas de la hoja de estilos.
+
+El elemento <p> del segundo bloque, al no tener clase ni atributo style, tendrá un tamaño de fuente de 10px, fuente Arial o Helvetica y color negro.
+
+Las tablas tendrán color verde debido al selector universal. Mientras que los enlaces <a>, las pseudo-clases definen el color según el estado del enlace teniendo mayor especificidad sobre el selector universal.
+-->
+
+<body>
+
+  <!-- Bloque 1 -->
+  <p class="contenido" style="font-weight: normal;">
+    Este es un texto ...............
+  </p>
+  <table>
+    <tr>
+      <td>Y esta es una tabla.......</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.google.com.ar">con un enlace</a>
+      </td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <!-- Bloque 2 -->
+  <p>Este es un texto................</p>
+  <table>
+    <tr>
+      <td>Y esta es una tabla.......</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.google.com.ar">con un enlace</a>
+      </td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
