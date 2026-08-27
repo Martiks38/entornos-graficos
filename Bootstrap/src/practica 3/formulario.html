@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="w-100 p-5" style="max-width: 800px;">
+    <form method="post" action="" class="p-4 g-3 row rounded shadow bg-light-subtle">
+      <!-- nombre, email, phone, subject, textare -->
+
+      <div>
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="name" placeholder="Pepito Pepe" maxlength="100" minlength="3"
+          aria-describedby="nameHelpBlock">
+        <div id="nameHelpBlock" class="form-text">
+          Tu nombre debe tener entre 3 y 100 caracteres de largo.
+        </div>
+      </div>
+      <div>
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+      </div>
+      <div>
+        <label for="phone" class="form-label">Número de teléfono</label>
+        <input type="tel" class="form-control" id="phone" placeholder="+54 341 1234567">
+      </div>
+      <div>
+        <label for="subject" class="form-label">Asunto</label>
+        <input type="text" class="form-control" id="subject" placeholder="Consultar ...">
+      </div>
+      <div>
+        <label for="message" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="message" rows="5" maxlength="256" aria-describedby="messageHelpBlock">Buenos días, les escribo ...
+        </textarea>
+        <div id="messageHelpBlock" class="form-text">
+          Tu mensaje debe tener como máximo 256 caracteres de largo.
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-dark">Enviar</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
